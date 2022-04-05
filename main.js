@@ -1,2 +1,2 @@
-alert ("hello");
-alert ("hi");
+// alert ("hello");
+// alert ("hi");
