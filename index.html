@@ -4,74 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Document</title>
-    <style>
-        h1 {
-            text-align: center;
-            font-size: 60px;
-            color: aqua;
-        }
-        table ,tr ,th ,td {
-            border: 4px double blue;
-            text-align: center;
-            font-size: 40px;
-            padding: 40px;
-        }
-        th {
-            text-decoration: underline;
-        }
-        td th {
-            padding: 20px;
-        }
-
-        div {
-            margin: auto;
-            width: 50%;
-        }
-        button {
-            font-size: 30px;
-            border: double;
-            text-align: center;
-            cursor: pointer;
-            padding: 10px;
-            display: inline-block;
-        }
-                    
-    </style>
+    
 </head>
 <body>
 
 
-    <h1>header</h1>
-    <div>
-        <table>
-            <tr>
-                <th>name</th>
-                <th>last name</th>
-                <th>grade</th>
-                <th> press  </th>
-            </tr>
-            <tr>
-                <td>yossef</td>
-                <td>gidlaw</td>
-                <td>99</td>
-                <td> <button>press</button> </td>
-            </tr>
-            <tr>
-                <td>nisim</td>
-                <td>cohen</td>
-                <td>88</td>
-                <td> <button>press</button> </td>
-            </tr>
-            <tr>
-                <td>eyal</td>
-                <td>golan</td>
-                <td>87</td>
-                <td> <button>press</button> </td>
-            </tr>
-        </table>
-    </div>
+    <h1 id="head">memory game</h1>
 
+    <button id="relod_game" onClick="window.location.reload();">start new game</button>
+    
+    <div id="board"></div>
     <script src="main.js"></script>
 
 
