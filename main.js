@@ -1,25 +1,40 @@
-const cards = ["🍔","🍕","🍩","🍿","🌯","🎂","🍔","🍕","🍩","🍿","🌯","🎂",]
+const cards = ["🍔","🍕","🍩","🍿","🌯","🎂","🍔","🍕","🍩","🍿","🌯","🎂","🌯","🎂","🍩","🎂","🍔","🍕"]
+
+
+//////////////////////////////////////////////////
 
 function creatcards (i) {
     const cardEl = document.createElement("div");
-    cardEl.innerHTML = cards[i];
     cardEl.id = i;
+    cardEl.class = "cards";
+    cardEl.onclick = cardClicked ;
+    // cardEl.innerHTML =  ;
     return cardEl;
 }
 
-let newCards = shuffle(cards);
-console.log(newCards);
+/////////////////////////////////////////////////
 
-for (i in newCards) {
-    const element = creatcards(i);
-    board.appendChild(element)
+const cardClicked = (evn) => {
+    cardEl = evn.target;
+    let idx = cardEl.id;
+    cardEl.innerHtml = cards[idx];
+    console.log(cardEl.innerHtml);
 }
 
-// function shufflecard(arr) {
-//     arr.map(value => ({ value, sort: Math.random() }))
-//     return arr.sort()
-// }
 
+//////////////////////////////////////////////////
+window.onload = () => { 
+  let newCards = shuffle(cards);
+  for (i in newCards) {
+      const element = creatcards(i);
+      board.appendChild(element)
+  }  
+}
+//////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////
 
 function shuffle(array) {
     var j, x, i;
@@ -32,14 +47,4 @@ function shuffle(array) {
     return array;
 }
 
-
-document.getElementById("head").onmouseover = function() {mouseOver()};
-document.getElementById("head").onmouseout = function() {mouseOut()};
-
-function mouseOver() {
-  document.getElementById("head").style.color = "red";
-}
-
-function mouseOut() {
-  document.getElementById("head").style.color = "black";
-}
+//////////////////////////////////////////////////////////////////////
