@@ -5,27 +5,9 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
-#board {
-    color: brown;
-    border: 2px solid greenyellow;
-    margin: auto;
-    width: 50%;
-}
-div {
-    
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    color: brown;
-    border: 2px solid greenyellow;
-    width: 20%;
-    padding: 13px;
-    font-size: 75px;
-}
-
-div#\30 {
-    background-color: aquamarine;
+h1:hover {
+    color: #4CAF50;
+    cursor: pointer;
 }
 button {
     background-color: #4CAF50; /* Green */
@@ -40,5 +22,50 @@ button {
     transition-duration: 0.4s;
     cursor: pointer;
     align-items: center;
-    left: 50%;
   }
+
+#btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+    background-image: url("https://discovery-cdn.wolt.com/cities/tartu/sections/d65274e6-204b-11eb-9267-02f48c0bf2d5_food_pattern_hero_banner.jpg");
+    height: 100%;
+    width: 100%;
+    /* background-repeat: no-repeat, repeat; */
+    /* position: absolute; */
+
+}
+#board {
+    background-image: url("https://drop.ndtv.com/albums/COOKS/5-bhurji-recipe_637805149433775569/637805149445866586.jpeg");
+    border: 2px solid greenyellow;
+    margin: auto;
+    height: 430px;
+    width: 50%;
+    padding: 30px;
+}
+
+
+div#board div{
+
+    text-align: center;
+    background-color: rgb(216, 248, 230); 
+    border: 2px solid greenyellow; 
+    height: 90px;
+    width: 70px;
+    padding: 3px;
+    font-size: 35px;
+    margin: 10px;
+    
+}
+
+div#board div:hover {
+    background-color: #a1e6a4;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    height: 100px;
+    width: 75px;
+}
+
